@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Patrick Hand', cursive;;
+}
+body{
+    background-image: url(background.png);
+    color: #ffff;
+}
+
+.title{
+    background-image: url(background.png);
+    width: 60%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    margin-bottom: -35px;
+}
+h2{
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color:#FDB301 ;
+    font-family:'Satisfy'
+}
+.bebidas{
+    position:absolute;
+    top:150px;
+    left: 50px;
+    margin-bottom: 25px;
+    margin-left: -11px;
+    padding-left: 7px;
+    border-left: 3px solid white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+hr{
+    border: 2px solid white;
+    position: absolute;
+    top: 82px;
+    width: 100%;
+    z-index: -5;
+}
+
+.opcao{
+    display:flex;
+    border-left: 3px solid white;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+li{
+    font-size:22px ;
+    list-style: none;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.preco{
+    background-color: #FDB301;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: #1e1e1e;
+    padding-left: 2px;
+}
+
+.image{
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 30px;
+    height: 120px;
+}
