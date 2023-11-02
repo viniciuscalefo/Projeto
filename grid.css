@@ -53,13 +53,13 @@ hr{
 
 .opcao{
     display: grid;
-    column-gap: 200px;
-    grid-template-columns: 150px 150px;
+    column-gap: 80px;
+    grid-template-columns: 120px 150px;
     grid-template-rows: repeat(12,40px);
     max-width: 490px; /*medidas corelacionadas, é oq faz a linha n distorcer*/
     margin: 0 auto;
-    border-left: 2px solid white;
-    padding-left: 15px;
+    border-left: 3px solid white;
+    margin-left: 19.5px;/*possivel alteração para ficar alinhado*/
     margin-bottom: 30px;
 }
 
@@ -71,10 +71,11 @@ li{
 }
 
 .bebidas{
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 400px 400px;
     max-width: 490px; /*medidas corelacionadas, é oq faz a linha n distorcer*/
     margin: 0 auto;
+    margin-left: 19.5px;
     padding-left: 10px;
     border-left: 3px solid white;
     font-size: 40px;
@@ -83,7 +84,7 @@ li{
 }
 .preco{
     background-color: #FDB301;
-    width: 100px;
+    width: 90px;
     height: 30px;
     border-radius: 10px;
     color: #1e1e1e;
@@ -113,7 +114,7 @@ li{
 }
 .suinas{
     margin-left: 15px;
-    border-left: 3px solid #ffff
+    border-left: 3px solid #ffff;
 }
 h4{
     font-size: 25px;
@@ -121,55 +122,56 @@ h4{
     font-weight: 400;
 }
 .suinas div{
-    padding-left: 12px;
+    padding-left: 9px;
     margin-bottom: 20px;
 }
 .principal{
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 300;
     margin-bottom: -7px;
 }
 .ac{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 200;
 }
 
 .gambiarra2{
     display:grid;
-    grid-template-columns: 360px 120px;
+    grid-template-columns: 250px 110px;
 }
-.listaxx{
+.gambiarra2 > ul{
     padding-top: 40px;
 }
 
-.preco2{
-    margin-bottom: 42px;
+.gambiarra2 > ul > li{
+    margin-bottom: 33px;
 }
 
 /*PARMEGIANS*/
-.parmegiana1{
+.parmegiana-container{
     height: 470px;
     width: 100%;
+    max-width: 540px;
     margin: auto;
 }    
 
-.parmegiana1 > h3{
+.parmegiana-container > h3{
     text-transform: uppercase;
     font-size: 40px;
-     max-width: 200px;
+    max-width: 220px;
     margin: 0 auto;
 
 }
 
-.parmegiana2, .grid-salgados{
+.parmegiana-grid, .grid-salgados{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 45px 35px 45px 35px 45px 35px 45px 35px;
+    grid-template-rows:repeat(4, 45px 35px);
     justify-items: center;
     row-gap: 10px;
 }
 
-.parmegiana2 li{
+.parmegiana-grid li{
     margin-top: -8px;
 }
 
@@ -177,7 +179,9 @@ h4{
 
 .massas{
     display: grid;
-    padding: 5px 20px;
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
     grid-template-columns: 50% 50%;
     grid-template-rows:repeat(3,200px);
 }
@@ -196,17 +200,18 @@ h4{
 
 /*Guarnicoes*/
 .guarnicoes{
-    width: 90%;
-    margin: auto;
-    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    height: 420px;
     margin-top: 20px;
-    max-width: 500px;
-    padding-left: 15px;
+    max-width: 540px;
+    margin-left: 19.5px;
+    padding-left: 10px;
     display: grid;
-    grid-template-columns:45% 50%;
+    grid-template-columns:40% 50%;
     grid-template-rows: repeat(4,100px);
     justify-items: flex-start;
-    column-gap: 40px;
+    column-gap: 20px;
     border-left: 3px solid white;}
 
 .guarnicoes > p{
@@ -215,36 +220,47 @@ h4{
 
 .flex-guarnicao{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     flex-wrap: wrap;
 }
+.flex-guarnicao > li{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    color: #1e1e1e;
+    padding-left: 2px;
+    padding-top: 2px;
+    font-size: 17.5px;
+}
 
-.flex-guarnicao>p{
-    letter-spacing: 50px;
-    padding-left: 44px;
+.flex-guarnicao > p{
+    letter-spacing: 35px;
+    padding-left: 35px;
     margin-top: -30px;
 }
 
 /*Salgados*/
 
-.grid-salgados>li{
+.grid-salgados > li{
     margin-top: -12px;
 }
 
 /*Aperitivos*/
 
 .aperitivos{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     height: 450px;
     margin-top: 20px;
-    max-width: 500px;
-    padding-left: 15px;
+    max-width: 540px;
+    padding-left: 10px;
+    margin-left: 19.5px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 150px 92px 92px;
     grid-template-rows: repeat(5,120px);
-    column-gap: 20px;
+    column-gap: 7px;
     border-left: 3px solid white;
+   
 }
 
 .flex-price{
@@ -253,22 +269,21 @@ h4{
     flex-wrap: wrap;
 }
 
-.flex-price>.principal{
+.flex-price > .preco{
+    width: 75px;
+    font-size: 18px;
+    margin: 10px 0px 3px 0px;
+}
+.flex-price > .principal{
     margin-top: -40px;
     height: 30px;
+    font-size: 18px;
 }
 
 /*MENU*/
 
-@media(max-width:1500px){
-    *{
-        font-family: 'Patrick Hand', cursive;
-    }
-    body,ul{
-        margin: 0px;
-        padding: 0px;
-    }
-    
+@media(max-width:700px){
+
     a{
         color: #ffff;
         text-decoration: none;
@@ -298,7 +313,11 @@ h4{
     
     #menu a {
         display: block;
-        padding: 0.5rem;
+        padding: 8px 8px;
+        margin: 0 1rem ;
+        border-bottom:  2px solid #ffff;
+        font-size: 16px;
+        text-transform: uppercase;
     }
     
     #btn-mobile{
@@ -306,14 +325,13 @@ h4{
         color: #e7e7e7;
     }
     
-    #logo{
-        margin-left: 20px;
-    }
+    #logo{margin-left: 20px;}
+
     #menu{
-        /* display: none; */
         display: block;
         position: absolute;
-        width: 40%;/*alterado width 100%*/
+        min-width: 165px;
+        width: 50%;/*alterado width 100%*/
         top:120px;
         left:0px;  /*alterado right 0px */
         background: #010101;
@@ -330,13 +348,15 @@ h4{
         overflow-y: auto;/*pode ser que retire*/
         border-bottom-right-radius: 10px;
     }
+    
+    /*Animação do Menu Hamburger*/
+    #nav.active #hamburger{border-top-color: transparent;}
 
-    #menu a {
-        padding: 0.5rem 0;
-        margin: 0 1rem ;
-        border-bottom:  2px solid #ffff;
-        font-size: 16px;
-        text-transform: uppercase;
+    #nav.active #hamburger::before{transform: rotate(135deg);}
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
  
     #informacoes{
@@ -350,8 +370,8 @@ h4{
         align-items: center;
         width: 100%;
     }
-    #contato img{ width:25px; height: 25px;}
-    #contato > p >a {
+    #contato img{ width:30px; height: 30px;}
+    #contato > p > a {
         margin:5px 0px 9px 5px;
         padding: 0;
         border-bottom: none;
@@ -362,6 +382,7 @@ h4{
         padding: 5px 7px;
         height: 55px;
         width:170px;
+        min-width: 155px;
         border-radius: 15px;
         color: #1E1E1E;
         background-color: #FDB301;
@@ -371,10 +392,10 @@ h4{
         text-align: center;
     }
     #domingo{
-        width: 100px;
+        width: 120px;
         margin: 0 auto;
         color: #FDB301;
-        font-size: 14px; 
+        font-size: 16px; 
     }
 
     #btn-mobile{
@@ -403,17 +424,4 @@ h4{
         transition: 1.0s;
         position: relative;
     }
-
-    #nav.active #hamburger{
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburger::before{
-        transform: rotate(135deg);
-    }
-    #nav.active #hamburger::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
 }
